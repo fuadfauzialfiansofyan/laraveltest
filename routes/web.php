@@ -16,3 +16,17 @@ Route::get('/', 'HomeController@index');
 Route::get('/register', 'AuthController@index');
 Route::post('/welcome', 'AuthController@welcome');
  
+Route::get('/master', function(){
+    return view('halaman.master'); 
+}
+);
+
+Route::get('/table', function(){
+    return view('halaman.items.table');
+}
+);
+
+Route::get('/datatable', function(){
+    return view('halaman.items.datatable');
+}
+);
